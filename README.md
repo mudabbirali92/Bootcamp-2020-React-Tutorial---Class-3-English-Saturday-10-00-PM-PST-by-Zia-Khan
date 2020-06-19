@@ -1,9 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-#Video Tutorial
+# Video Tutorial
 https://www.youtube.com/watch?v=AHC-Gas_sok
 
 # React Tutorial
 http://react-guide-backup.surge.sh/
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
