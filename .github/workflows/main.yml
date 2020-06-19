@@ -40,13 +40,7 @@ jobs:
       with:
           cmd: build # will run `yarn build` command
       
-      # Now testing yarn if its working
-    - name: testing Yarn      
-      uses: borales/actions-yarn@v2.0.0
-      with:
-          cmd: test # will run `yarn test` command
-          
-        # Now testing yarn if its working
+     # Now testing yarn if its working
     - name: testing Yarn      
       uses: borales/actions-yarn@v2.0.0
       with:
