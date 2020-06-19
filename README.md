@@ -1,8 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Video Tutorial
+https://www.youtube.com/watch?v=AHC-Gas_sok
+
+# React Tutorial
+http://react-guide-backup.surge.sh/
 
 ## Available Scripts
 
 In the project directory, you can run:
+
 
 ### `yarn start`
 
