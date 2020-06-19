@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploying ReactApp by Mudabbir Name
+name: Deploying react with Name
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -22,7 +22,13 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-   #stalling yarn for create react app
+     # Now we will specify the version and install nodeJS 
+    - name: Installing node js on server machine # this could be a name of your command just for memorizing peupose and need of that command
+      uses: actions/setup-node@v2-beta #this would be tha actual command that will run on your server (ubuntu-github)
+      with:
+        node-version : 12
+        
+      #npm installing yarn for create react app
     - name: Intsalling yarn 
       uses: borales/actions-yarn@v2.0.0
       with:
@@ -52,4 +58,5 @@ jobs:
     
     # Now we need after installing surge we need to run that
     - name: Running a surge
-      run: surge ./build GorillazName.surge.sh --token ${{secrets.SURGE_TOKEN}}  
+      run: surge ./build GorillazName.surge.sh --token ${{secrets.SURGE_TOKEN}}   
+
